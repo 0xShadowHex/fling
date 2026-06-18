@@ -388,16 +388,14 @@ verifyBtn.MouseButton1Click:Connect(function()
 end)
 
 getKeyBtn.MouseButton1Click:Connect(function()
-    local keyUrl = "https://chopperhub.com/getkey"
+    local keyUrl = "https://discord.gg/36EuJKqNeF"
     if setclipboard or toclipboard then
         local copy = setclipboard or toclipboard
         copy(keyUrl)
         showNotification("Key Link Copied!", "Link copied to your clipboard.", Color3.fromRGB(230, 180, 100))
     else
-        showNotification("Link", "Link: chopperhub.com/getkey", Color3.fromRGB(230, 180, 100))
+        showNotification("Link", "Link: discord.gg/36EuJKqNeF", Color3.fromRGB(230, 180, 100))
     end
-    keyInput.Text = correctKey
-    keyStatus.Text = "Autofilled key for convenience!"
     keyStatus.TextColor3 = Color3.fromRGB(230, 180, 100)
 end)
 
